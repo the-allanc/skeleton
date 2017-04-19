@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# Project skeleton maintained at https://github.com/jaraco/skeleton
+# Project skeleton maintained at https://github.com/the-allanc/skeleton
+# All the hard work done by jaraco at https://github.com/jaraco/skeleton
 
 import io
 
@@ -15,11 +16,11 @@ description = ''
 params = dict(
 	name=name,
 	use_scm_version=True,
-	author="Jason R. Coombs",
-	author_email="jaraco@jaraco.com",
+	author="Allan Crooks",
+	author_email="allan@increment.one",
 	description=description or name,
 	long_description=long_description,
-	url="https://github.com/jaraco/" + name,
+	url="https://github.com/the-allanc/" + name,
 	packages=setuptools.find_packages(),
 	include_package_data=True,
 	namespace_packages=name.split('.')[:-1],
