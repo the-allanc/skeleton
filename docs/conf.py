@@ -11,11 +11,17 @@ extensions = [
     'sphinx.ext.viewcode',
     'jaraco.packaging.sphinx',
     'rst.linker',
+    'conf_as_extension',
 ]
 
 master_doc = 'index'
 autodoc_member_order = 'bysource'
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+
+# This allows the conf_as_extension module to be imported.
+import os
+import sys
+sys.path.append(os.path.dirname(__file__))
 
 if html_theme == 'sphinx_py3doc_enhanced_theme':
     import sphinx_py3doc_enhanced_theme
