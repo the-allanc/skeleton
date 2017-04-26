@@ -26,6 +26,8 @@ params = dict(
     namespace_packages=name.split('.')[:-1],
     python_requires='>=2.7',
     install_requires=[
+        'requests',
+        'six',
     ],
     extras_require={
         'testing': [
