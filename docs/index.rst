@@ -1,5 +1,5 @@
-Welcome to skeleton documentation!
-========================================
+.. include:: ../README.rst
+  :end-before: all-content-above-will-be-included-in-sphinx-docs
 
 .. toctree::
    :maxdepth: 1
