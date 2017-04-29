@@ -15,7 +15,8 @@ description = ''
 
 params = dict(
     name=name,
-    use_scm_version=True,
+    version='0.1', # Remove if not using bumpversion.
+    use_scm_version=True, # Remove if not using setuptools_scm.
     author="Allan Crooks",
     author_email="allan@increment.one",
     description=description or name,
@@ -42,7 +43,7 @@ params = dict(
         ],
     },
     setup_requires=[
-        'setuptools_scm>=1.15.0',
+        'setuptools_scm>=1.15.0', # Remove if not using setuptools_scm.
     ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -54,5 +55,6 @@ params = dict(
     entry_points={
     },
 )
+
 if __name__ == '__main__':
     setuptools.setup(**params)
