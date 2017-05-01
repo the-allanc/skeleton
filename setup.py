@@ -3,15 +3,35 @@
 # Project skeleton maintained at https://github.com/the-allanc/skeleton
 # All the hard work done by jaraco at https://github.com/jaraco/skeleton
 
+#
+# Extract the project identity from the README.
+#
 import io
-
 import setuptools
 
 with io.open('README.rst', encoding='utf-8') as readme:
-    long_description = readme.read()
+    readme = readme.read()
 
-name = 'skeleton'
-description = ''
+def get_definition(prefix):
+    for line in readme.split('\n'):
+        if line.startswith(prefix):
+            return line[len(prefix):].strip()
+    err = 'no line in README.rst with prefix {!r}'.format(prefix)
+    raise AssertionError(err)
+
+def get_description():
+    d_start, d_end = '.. description-start', '.. description-end'
+    i_start = readme.index(d_start) + len(d_start)
+    return readme[i_start:readme.index(d_end)].strip()
+
+name = get_definition('.. |name| replace:: ')
+url = get_definition('.. _repository: ')
+summary = get_definition('.. |summary| replace:: ')
+description = get_description()
+
+#
+# End extraction code.
+#
 
 params = dict(
     name=name,
@@ -19,10 +39,10 @@ params = dict(
     use_scm_version=True, # Remove if not using setuptools_scm.
     author="Allan Crooks",
     author_email="allan@increment.one",
-    description=description or name,
-    long_description=long_description,
+    description=summary or name,
+    long_description=description,
     license='MIT',
-    url="https://github.com/the-allanc/" + name,
+    url=url,
     keywords=[],
     packages=setuptools.find_packages(),
     include_package_data=True,
