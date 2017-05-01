@@ -5,6 +5,7 @@
    :maxdepth: 1
 
    history
+   setup
 
 
 .. automodule:: skeleton
