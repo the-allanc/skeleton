@@ -41,7 +41,7 @@ params = dict(
             'sphinx',
             'jaraco.packaging>=3.2',
             'rst.linker>=1.9',
-            'sphinx_py3doc_enhanced_theme',
+            'allanc-sphinx[yeen]',
         ],
     },
     setup_requires=[
