@@ -44,7 +44,7 @@ params = dict(
     license='MIT',
     url=url,
     keywords=[],
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=['tests']),
     include_package_data=True,
     namespace_packages=name.split('.')[:-1],
     python_requires='>=2.7',
