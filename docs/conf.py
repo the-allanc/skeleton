@@ -35,7 +35,7 @@ link_files = {
             ),
             dict(
                 pattern=r'^(?m)((?P<scm_version>v?\d+(\.\d+){1,2}))\n[-=]+\n',
-                with_scm='{text}\n{rev[timestamp]:%d %b %Y}\n',
+                with_scm='{text}\n*{rev[timestamp]:%d %b %Y}*\n',
             ),
             dict(
                 pattern=r'PEP[- ](?P<pep_number>\d+)',
