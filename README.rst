@@ -8,7 +8,7 @@
 
 |summary|
 
-Enter description here.
+Enter description here. If you want to know how to use the skeleton project, read `this document <README-skeleton.rst>`_.
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
