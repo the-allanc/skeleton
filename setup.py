@@ -20,7 +20,8 @@ def get_definition(prefix):
     raise AssertionError(err)
 
 def get_description():
-    d_start, d_end = '.. description-start', '.. description-end'
+    d_start = '|summary|\n'
+    d_end = '.. all-content-above-will-be-included-in-sphinx-docs'
     i_start = readme.index(d_start) + len(d_start)
     return readme[i_start:readme.index(d_end)].strip()
 

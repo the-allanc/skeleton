@@ -8,11 +8,7 @@
 
 |summary|
 
-.. description-start
-
 Enter description here.
-
-.. description-end
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
