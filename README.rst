@@ -1,7 +1,29 @@
 .. |name| replace:: skeleton
 .. |summary| replace:: We need a summary.
 .. _repository: https://github.com/the-allanc/skeleton/
-.. _documentation: https://skeleton.readthedocs.io/
+.. _documentation: https://skeleton.readthedocs.io/en/stable/
+.. _pypi: https://pypi.python.org/pypi/skeleton
+.. _coveralls: https://coveralls.io/github/the-allanc/skeleton
+.. _license: https://github.com/the-allanc/oioi/skeleton/master/LICENSE.txt
+
+|Build Status| |Coverage| |Docs| |Version| |License|
+
+.. |Build Status| image:: https://img.shields.io/travis/the-allanc/skeleton.svg?style=flat
+    :target: repository_
+    :alt: Build Status
+.. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/skelton.svg?style=flat
+    :target: coveralls_
+    :alt: Coverage
+.. |Docs| image:: https://readthedocs.org/projects/skeleton/badge/?version=stable&style=flat
+    :target: documentation_
+    :alt: Docs
+.. |Version| image:: https://img.shields.io/pypi/v/skeleton.svg?style=flat
+    :target: pypi_
+    :alt: Version
+.. |License| image:: https://img.shields.io/pypi/l/skeleton.svg?style=flat
+    :target: license_
+    :alt: License
+
 
 |name|
 ======
