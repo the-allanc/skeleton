@@ -17,8 +17,7 @@ deploy:
     tags: true
     all_branches: true
   user: amc6010
+  # supply password with `travis encrypt --add deploy.password`
   distributions: dists
-  password:
-    secure: JZyQInjsOjttKUCO8t4SasNqcqxifpof+yhC8o5OWfX2ar+XLpXkNSUAh2joV1bTN9Zk8ETLk6FIyROk2vZerLSWbJadeUTkbORHtSZmRfwPrt4Co4NKM0cPs0y1vV2s1H3W+puoj+ZFpgigoUOrLYSf5qKQBlizhNaXEcrFRsENwLc9Z+mZ/XdbXjAjueu5yDFguX2VeBP72mWDmHfL5minJOKQkr3ayNlPSV1ePp9DHIsORH7hR6NLYARKsq8XbX947uwJmWEqwsDw8lh02NN995UV+KrdgkNRiHXy5qQkDOnMAAtuZIhLw7zZWN0OJCLYNWAU+Dri9JCqDFek9Aqnh67fzZ0nSfQe+KvjgLSN/klR/Idftxp2pnv/TvI+q/oEPH9Zj0JmEmJxIVv+iFE6oWMS81HgSZPZ10PFzQktaVX85GzSZRheDOkONx2R3CQG1YpvvafniMrEjy3aenmJnxg58LLtKMPoQf5WIx87Z/3/HQOxDboxKSSYwa4ULy0r0y6yXF5uJb8ZEgDlE89EhwwQ8esArVUnj4NaKgmjuIYHJaWNuowOaeIDYaNh4Vzr7NsdfBx3fayHvyQ8volu3HLiWrLA4ihv/t+9moqsEmocqzC9qjuPJqC1ZUP0bSHRe4K9zUmH2FGnXOz/eiMocs9uHpHrHexAd7dVfYQ=
 after_success:
 - coveralls
