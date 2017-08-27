@@ -24,7 +24,6 @@ New repository
   $ git init my-project
   $ cd my-project
   $ git pull https://git@github.com/the-allanc/bones/
-  $ git branch skeleton
 
 Existing repository
 -------------------
@@ -35,7 +34,9 @@ Existing repository
   $ git rm -f -r .
   $ git pull https://git@github.com/the-allanc/bones/
   $ git checkout master
-  $ git merge skeleton --allow-unrelated-histories
+  $ git merge skeleton --allow-unrelated-histories # requires Git 2.11 or greater
+  
+And then to keep it updated, you just need to pull and merge changes in.
 
 Modification
 ============
