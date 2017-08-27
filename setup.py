@@ -45,7 +45,8 @@ params = dict(
     license='MIT',
     url=url,
     keywords=[],
-    packages=setuptools.find_packages(exclude=['tests']),
+    py_modules=['skeleton'], # Single module project.
+    packages=setuptools.find_packages(exclude=['tests']), # Multiple module project.
     include_package_data=True,
     namespace_packages=name.split('.')[:-1],
     python_requires='>=2.7',
