@@ -11,15 +11,18 @@
 .. |Build Status| image:: https://img.shields.io/travis/the-allanc/skeleton.svg?style=flat
     :target: travis_
     :alt: Build Status
-.. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/skelton.svg?style=flat
+.. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/skeleton.svg?style=flat
     :target: coveralls_
     :alt: Coverage
 .. |Docs| image:: https://readthedocs.org/projects/skeleton/badge/?version=stable&style=flat
     :target: documentation_
     :alt: Docs
-.. |Version| image:: https://img.shields.io/pypi/v/skeleton.svg?style=flat
+.. |Release Version| image:: https://img.shields.io/pypi/pyversions/skeleton.svg?style=flat
     :target: pypi_
-    :alt: Version
+    :alt: Release Version
+.. |Python Version| image:: https://img.shields.io/pypi/l/skeleton.svg?style=flat
+    :target: pypi_
+    :alt: Python Version
 .. |License| image:: https://img.shields.io/pypi/l/skeleton.svg?style=flat
     :target: license_
     :alt: License
@@ -34,7 +37,7 @@
 
 Enter description here. If you want to know how to use the skeleton project, read `this document <README-skeleton.rst>`_.
 
-|Docs| |Version| |License| |Build Status| |Coverage| |Code Climate|
+|Docs| |Release Version| |Python Version| |License| |Build Status| |Coverage| |Code Climate|
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
