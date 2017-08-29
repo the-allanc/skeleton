@@ -1,5 +1,11 @@
 .. |name| replace:: skeleton
 .. |summary| replace:: We need a summary.
+
+|name|
+======
+
+|summary|
+
 .. _repository: https://github.com/the-allanc/skeleton/
 .. _documentation: https://skeleton.readthedocs.io/en/stable/
 .. _pypi: https://pypi.python.org/pypi/skeleton
@@ -29,11 +35,6 @@
 .. |Code Climate| image:: https://codeclimate.com/github/the-allanc/skeleton/badges/gpa.svg
     :target: codeclimate_
     :alt: Code Climate
-
-|name|
-======
-
-|summary|
 
 Enter description here. If you want to know how to use the skeleton project, read `this document <README-skeleton.rst>`_.
 
