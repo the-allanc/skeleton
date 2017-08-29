@@ -1,6 +1,9 @@
 .. include:: ../README.rst
   :end-before: all-content-above-will-be-included-in-sphinx-docs
 
+References
+----------
+
 .. toctree::
    :maxdepth: 1
 
@@ -8,7 +11,7 @@
    setup
 
 API
-***
+---
 
 ..
 .. If you have want multiple documents to form your API, then modify
