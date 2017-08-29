@@ -20,7 +20,7 @@
 .. |Release Version| image:: https://img.shields.io/pypi/pyversions/skeleton.svg?style=flat
     :target: pypi_
     :alt: Release Version
-.. |Python Version| image:: https://img.shields.io/pypi/l/skeleton.svg?style=flat
+.. |Python Version| image:: https://img.shields.io/pypi/v/skeleton.svg?style=flat
     :target: pypi_
     :alt: Python Version
 .. |License| image:: https://img.shields.io/pypi/l/skeleton.svg?style=flat
