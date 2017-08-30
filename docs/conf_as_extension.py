@@ -5,9 +5,9 @@ def setup(app):
 
 prolog = '''
 .. |projname| replace:: {0.project}
-.. |repo| replace:: {0.package_url}
+.. _repository: {0.package_url}
 '''
-    
+
 def init(app):
     # I prefer the copyright to include the date.
     if app.config.author == app.config.copyright:
