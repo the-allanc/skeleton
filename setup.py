@@ -63,7 +63,7 @@ params = dict(
             'sphinx',
             'jaraco.packaging>=3.2',
             'rst.linker>=1.9',
-            'allanc-sphinx[yeen]',
+            'allanc-sphinx[yeen]>=0.2',
             'collective.checkdocs',
         ],
     },
