@@ -34,7 +34,7 @@ API
 .. then update the name of the module here and use that instead.
 ..
 
-.. automodule:: skeleton
+.. automodule:: SKELETON
     :members:
     :undoc-members:
     :show-inheritance:
