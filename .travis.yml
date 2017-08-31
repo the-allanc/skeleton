@@ -12,6 +12,8 @@ script:
 - python setup.py checkdocs
 - py.test --cov SKELETON/
 - sphinx-build -W docs/ build/docs/
+after_script:
+- flake8
 branches:
   except:
   - skeleton
