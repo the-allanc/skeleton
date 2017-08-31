@@ -11,6 +11,7 @@ install:
 script:
 - python setup.py checkdocs
 - py.test --cov SKELETON/
+- sphinx-build -W docs/ build/docs/
 branches:
   except:
   - skeleton
