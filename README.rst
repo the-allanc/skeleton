@@ -20,7 +20,7 @@
 .. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/SKELETON.svg?style=flat
     :target: coveralls_
     :alt: Coverage
-.. |Docs| image:: https://readthedocs.org/projects/skeleton/badge/?version=stable&style=flat
+.. |Docs| image:: https://readthedocs.org/projects/SKELETON/badge/?version=stable&style=flat
     :target: documentation_
     :alt: Docs
 .. |Release Version| image:: https://img.shields.io/pypi/pyversions/SKELETON.svg?style=flat
