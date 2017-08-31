@@ -48,13 +48,13 @@ link_files = {
 # Extract the repository URL from the README.
 import io
 with io.open('../README.rst', encoding='utf-8') as readme:
-	repo_prefix = '.. _repository: '
-	repo_url = None
-	for line in readme.readlines():
-		if line.startswith(repo_prefix):
-			repo_url = line[len(repo_prefix):].strip()
-			break
-	del readme, repo_prefix, line
+    repo_prefix = '.. _repository: '
+    repo_url = None
+    for line in readme.readlines():
+        if line.startswith(repo_prefix):
+            repo_url = line[len(repo_prefix):].strip()
+            break
+    del readme, repo_prefix, line
 
 if html_theme == 'yeen' and repo_url.startswith('https://github.com'):
-	html_theme_options = {'github_url': repo_url}
+    html_theme_options = {'github_url': repo_url}
