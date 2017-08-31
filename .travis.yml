@@ -4,10 +4,10 @@ python:
 - 3.6
 install:
 - pip install -r requirements-dev.txt
-- pip install coveralls pytest-cov pytest-pep8
+- pip install coveralls pytest-cov
 script:
 - python setup.py checkdocs
-- py.test tests/ --cov skeleton/ --pep8
+- py.test --cov skeleton/
 branches:
   except:
   - skeleton
