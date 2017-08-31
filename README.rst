@@ -42,6 +42,6 @@ SKELETON: Enter description here. If you want to know how to use the skeleton pr
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
-Full documentation can be found `here`__.
+You can browse the source code and file bug reports at the project repository_. Full documentation can be found `here`__.
 
 __ documentation_
