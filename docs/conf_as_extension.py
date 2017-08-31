@@ -1,12 +1,15 @@
 from __future__ import unicode_literals
 
+
 def setup(app):
     app.connect('builder-inited', init)
+
 
 prolog = '''
 .. |projname| replace:: {0.project}
 .. _repository: {0.package_url}
 '''
+
 
 def init(app):
     # I prefer the copyright to include the date.

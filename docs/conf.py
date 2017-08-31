@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import io
+import os
+import sys
 
 # Current preferred theme.
 html_theme = 'yeen'
@@ -19,8 +22,6 @@ autodoc_member_order = 'bysource'
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
 
 # This allows the conf_as_extension module to be imported.
-import os
-import sys
 sys.path.append(os.path.dirname(__file__))
 
 link_files = {
@@ -46,7 +47,6 @@ link_files = {
 }
 
 # Extract the repository URL from the README.
-import io
 with io.open('../README.rst', encoding='utf-8') as readme:
     repo_prefix = '.. _repository: '
     repo_url = None
