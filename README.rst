@@ -14,22 +14,22 @@
 .. _travis: https://travis-ci.org/the-allanc/SKELETON
 .. _codeclimate: https://codeclimate.com/github/the-allanc/SKELETON
 
-.. |Build Status| image:: https://img.shields.io/travis/the-allanc/SKELETON.svg?style=flat
+.. |Build Status| image:: https://img.shields.io/travis/the-allanc/SKELETON.svg
     :target: travis_
     :alt: Build Status
-.. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/SKELETON.svg?style=flat
+.. |Coverage| image:: https://img.shields.io/coveralls/the-allanc/SKELETON.svg
     :target: coveralls_
     :alt: Coverage
 .. |Docs| image:: https://readthedocs.org/projects/SKELETON/badge/?version=stable&style=flat
     :target: documentation_
     :alt: Docs
-.. |Release Version| image:: https://img.shields.io/pypi/pyversions/SKELETON.svg?style=flat
+.. |Release Version| image:: https://img.shields.io/pypi/pyversions/SKELETON.svg
     :target: pypi_
     :alt: Release Version
-.. |Python Version| image:: https://img.shields.io/pypi/v/SKELETON.svg?style=flat
+.. |Python Version| image:: https://img.shields.io/pypi/v/SKELETON.svg
     :target: pypi_
     :alt: Python Version
-.. |License| image:: https://img.shields.io/pypi/l/SKELETON.svg?style=flat
+.. |License| image:: https://img.shields.io/pypi/l/SKELETON.svg
     :target: license_
     :alt: License
 .. |Code Climate| image:: https://img.shields.io/codeclimate/issues/github/the-allanc/SKELETON.svg
