@@ -12,8 +12,10 @@ script:
 - python setup.py checkdocs
 - py.test --cov SKELETON/
 - sphinx-build -W docs/ build/docs/
+- pylint --disable=W SKELETON
 after_script:
 - flake8
+- pylint SKELETON
 branches:
   except:
   - skeleton
