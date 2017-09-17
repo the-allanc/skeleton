@@ -46,7 +46,7 @@ Modification
 When integrating the skeleton into your project - the minimum changes required are as follows:
   - Remove `README-skeleton.rst` if it exists.
   - Modify the lines at the top of `README.rst` to define the project's name and summary, as well as the links to the project's repository and documentation.
-  - Change all references from `skeleton` in the badges section of `README.rst`.
+  - Change all references from `SKELETON` in the badges section of `README.rst`.
   - Update `.travis.yml` and change the files to look at for coverage when running `py.test`.
   - Add a description for the project (if required) in `README.rst`.
   - Modify the parameters of `setup.py` to remove one of the version parameters defining whether `bumpversion <https://github.com/peritus/bumpversion>`_ or `setuptools_scm <https://github.com/pypa/setuptools_scm>`_ is used for versioning.
