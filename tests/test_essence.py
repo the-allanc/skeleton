@@ -1,4 +1,5 @@
 from crookbook import essence
+import pytest
 
 class ThatBase(object):
     def __init__(self, **kwargs):
@@ -8,7 +9,7 @@ class ThatBase(object):
 @essence(['attr_one'])
 class A(ThatBase): pass
 
-@essence(['attr_one', 'attr_two'])
+@essence(['attr_one', 'attr_two'], mutable=False)
 class B(A): pass
 
 @essence(['attr_one'])
@@ -78,3 +79,17 @@ class TestEquality:
         assert e == f
         assert not e != f
 
+class TestHash:
+
+    def test_unhashable(self):
+        # unhashable by default.
+        with pytest.raises(TypeError):
+            hash(A(one=1))
+
+    def test_hashable(self):
+        d = {}
+        b12 = B(one=1, two=2)
+        b34 = B(one=3, two=4)
+        b12x = B(one=1, two=2, three=3)
+        assert hash(b12) == hash(b12x)
+        assert hash(b12) != hash(b34)
