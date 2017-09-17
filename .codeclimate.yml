@@ -6,3 +6,8 @@ engines:
 exclude_paths:
   - "docs/"
   - "tests/"
+  - '*.rst'
+  - '*.txt'
+  - '*.ini'
+  - 'setup.*'
+  - 'MANIFEST.in'
