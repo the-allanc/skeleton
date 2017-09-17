@@ -49,6 +49,14 @@ link_files = {
     ),
 }
 
+import subprocess
+git_status = subprocess.check_output(['git', 'status']).decode('utf-8')
+with io.open('debug.rst', 'w') as f:
+    f.write('::')
+    for line in git_status.split('\n'):
+        f.write('  ' + line + '\n')
+
+
 # Extract the repository URL from the README.
 with io.open('../README.rst', encoding='utf-8') as readme:
     repo_prefix = '.. _repository: '
