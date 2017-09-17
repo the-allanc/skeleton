@@ -1,5 +1,5 @@
-import functools
 import six
+
 
 def essence(attrs, mutable=True):
 
@@ -61,3 +61,22 @@ def essence(attrs, mutable=True):
         return cls
 
     return essence_maker
+
+
+def described(inner):
+
+    def described_maker(cls):
+
+        def repr_(self):
+            return ('<{0.__class__.__name__} ' + inner + '>').format(self)
+
+        setattr(cls, '__repr__', repr_)
+
+        if '__str__' not in cls.__dict__:
+            def str_(self):
+                return repr(self)
+            setattr(cls, '__str__', str_)
+
+        return six.python_2_unicode_compatible(cls)
+
+    return described_maker
