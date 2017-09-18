@@ -60,10 +60,10 @@ To integrate skeleton into your project - the minimum changes required are as fo
   - Remove `README-skeleton.rst` if it exists.
   - Modify the lines at the top of `README.rst` to define the project's name and summary, as well as the links to the project's repository and documentation.
   - Change all references from `SKELETON` in the badges section of `README.rst`.
-  - Update `.travis.yml` and change the files to look at for coverage when running `py.test`.
+  - Update `.travis.yml` and change the files to look at for `pylint` and coverage when running `py.test` .
   - Add a description for the project (if required) in `README.rst`.
-  - Also modify setup.py to indicate if the project is a single or multiple module project.
-  - Update docs/index.rst and choose either the multi-document API approach or the inline API approach, then update the name of the automodule being used in docs/main.rst.
+  - Also modify `setup.py` to indicate if the project is a single or multiple module project.
+  - Update `docs/index.rst` and choose either the multi-document API approach or the inline API approach, then update the name of the automodule being used in `docs/main.rst`.
   - Either remove the `version` parameter or the `use_scm_version` parameter in `setup.py` depending on whether you're using `setuptools_scm` or `bumpversion` for managing version numbers.
   - If you are not using `setuptools_scm`, then you can remove the dependency on it in `setup.py`.
   - If you are not using `bumpversion`, then you can remove the dependency in `requirements-dev.txt` and its configuration in `setup.cfg`.
