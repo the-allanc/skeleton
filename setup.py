@@ -36,10 +36,16 @@ description = get_description()
 # End extraction code.
 #
 
+def version_scheme(scmver):
+    from setuptools_scm.version import postrelease_version
+    scmver.distance = scmver.distance or None
+    scmver.dirty = False
+    return postrelease_version(scmver)
+
 params = dict(
     name=name,
     version='0.1',  # SKELETON: Remove if not using bumpversion (also remove bumpversion from requirements-dev.txt)
-    use_scm_version=True,  # SKELETON: Remove if not using setuptools_scm.
+    use_scm_version={'version_scheme': version_scheme},  # SKELETON: Remove if not using setuptools_scm.
     author="Allan Crooks",
     author_email="allan@increment.one",
     description=summary or name,
