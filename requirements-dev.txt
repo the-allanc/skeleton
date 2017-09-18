@@ -1,6 +1,6 @@
 -e .[docs]
 -e .[testing]
-bumpversion
+git+https://github.com/the-allanc/bump2version.git@bumpversion-alias
 tox>=2.4
 flake8
 radon
