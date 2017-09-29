@@ -3,6 +3,9 @@ import six
 
 def essence(attrs, mutable=True):
 
+    if isinstance(attrs, six.string_types):
+        attrs = attrs.split(' ')
+
     def essence_maker(cls):
 
         def __essence__(self):

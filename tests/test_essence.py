@@ -26,6 +26,7 @@ class F(A): pass
 @essence(['attr_two', 'attr_one'])
 class G(A): pass
 
+
 class TestEquality:
 
     def test_essenceless(self):
@@ -179,3 +180,20 @@ class TestHash:
         b12x = B(one=1, two=2, three=3)
         assert hash(b12) == hash(b12x)
         assert hash(b12) != hash(b34)
+
+
+class TestAttrSpec:
+
+    def test_single_attr(self):
+        @essence('attr_one')
+        class X(ThatBase): pass
+
+        x = X(one=1)
+        assert x.__essence__() == (1,)
+
+    def test_multi_attr_in_string(self):
+        @essence('attr_one attr_two')
+        class X(ThatBase): pass
+
+        x = X(one=1, two=2)
+        assert x.__essence__() == (1, 2)
