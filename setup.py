@@ -57,13 +57,13 @@ params = dict(
         'testing': [
             'pytest>=2.8',
             'pytest-sugar',
+            'collective.checkdocs',
         ],
         'docs': [
             'sphinx',
             'jaraco.packaging>=3.2',
             'rst.linker>=1.9',
             'allanc-sphinx[yeen]>=0.2',
-            'collective.checkdocs',
         ],
     },
     setup_requires=[
