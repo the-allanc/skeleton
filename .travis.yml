@@ -17,10 +17,7 @@ script:
 - pylint --disable=W SKELETON.py  # SKELETON: For single module only.
 - pylint --disable=W SKELETON/    # SKELETON: For multi-module only.
 after_script:
-- flake8
-- pycodestyle
-- pylint SKELETON.py  # SKELETON: For single module only.
-- pylint SKELETON/    # SKELETON: For multi-module only.
+- tox -e lint
 branches:
   except:
   - skeleton
