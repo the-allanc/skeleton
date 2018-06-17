@@ -7,7 +7,7 @@ python:
 before_install: ['! grep -R SKELETON | grep -v grep']
 install:
 - pip install -r requirements-dev.txt
-- pip install coveralls
+- pip install coveralls tox-travis
 script:
 - tox -e verify
 after_script:
