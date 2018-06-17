@@ -34,7 +34,7 @@ link_files = {
         ),
         replace=[
             dict(
-                pattern=r'(Issue )?#(?P<issue>\d+)',
+                pattern=r'(Issue #|\B#)(?P<issue>\d+)',
                 url='{package_url}/issues/{issue}',
             ),
             dict(
@@ -70,3 +70,4 @@ with io.open('index.rst', encoding='utf-8') as index_contents:
     if '.. include:: api/' in index_contents.read():
         exclude_patterns = ['api/*.rst']
     del index_contents
+
