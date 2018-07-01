@@ -72,6 +72,11 @@ params = dict(
             'radon',
             'pylint',
         ],
+        'manage': [
+            'bump2version>=0.5.6',  # SKELETON: Remove if not using bumpversion.
+            'tox>=2.4',
+            'pip-tools',
+        ],
     },
     setup_requires=[
         'setuptools_scm>=1.15.0',  # SKELETON: Remove if not using setuptools_scm.
