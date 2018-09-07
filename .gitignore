@@ -3,7 +3,7 @@
 .eggs
 .idea
 .pytest_cache
-.python_version
+.python-version
 .tox
 *.egg-info
 *.pyc
