@@ -144,7 +144,7 @@ class MappingNS(ItemAttrs):
     def __dir__(self):
         superdir = getattr(super(MappingNS, self), '__dir__', None)
         if superdir is not None:
-            sdir = superdir()
+            sdir = superdir()  # pylint: disable=not-callable
         else:
             sdir = dir(type(self)) + list(getattr(self, '__dict__', {}))
         return sdir + list(self)
@@ -222,7 +222,7 @@ def _attrcopy(res, source, attrspec, maptype=dict):
 
     # Recurse our way downwards.
     if innertype == '[]':
-        for i, (nres, s) in enumerate(zip(newres, value)):
+        for nres, s in zip(newres, value):
             _attrcopy(nres, s, attrspec, maptype)
     else:
         _attrcopy(newres, value, attrspec, maptype)
