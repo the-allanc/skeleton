@@ -1,2 +1,2 @@
 -r requirements.txt # SKELETON: Remove if not an application.
--e .[manage,docs,testing,lint]
+-e file:./#egg=SKELETON[manage,docs,testing,lint]
