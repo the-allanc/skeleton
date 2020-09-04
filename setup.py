@@ -79,7 +79,7 @@ params = dict(
         ],
     },
     setup_requires=[
-        'setuptools_scm>=1.15.0',  # SKELETON: Remove if not using setuptools_scm.
+        'setuptools_scm>=3.4',  # SKELETON: Remove if not using setuptools_scm.
     ],
     classifiers=[
         # "Development Status :: 3 - Alpha",
