@@ -73,6 +73,7 @@ params = dict(
             'pylint',
         ],
         'manage': [
+            'black',
             'bump2version>=0.5.6',  # SKELETON: Remove if not using bumpversion.
             'tox>=2.4',
             'pip-tools',

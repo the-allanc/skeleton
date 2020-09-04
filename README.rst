@@ -35,6 +35,9 @@
 .. |Code Climate| image:: https://img.shields.io/codeclimate/issues/github/the-allanc/SKELETON.svg
     :target: codeclimate_
     :alt: Code Climate
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: Code style: Black
 
 SKELETON: Enter description here. If you want to know how to use the skeleton project itself, read `this document <README-skeleton.rst>`_.
 
