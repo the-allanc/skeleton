@@ -35,6 +35,9 @@
 .. |Code Climate| image:: https://img.shields.io/codeclimate/issues/github/the-allanc/crookbook.svg
     :target: codeclimate_
     :alt: Code Climate
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+    :alt: Code style: Black
 
 If there's something you find useful, feel free to request it gets put into a separate library.
 

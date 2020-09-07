@@ -34,7 +34,7 @@ params = dict(
     name=name,
     use_scm_version=True,
     author="Allan Crooks",
-    author_email="allan@increment.one",
+    author_email="allan@sixtyten.org",
     description=get_definition('.. |summary| replace:: '),
     long_description=get_description(),
     license='MIT',
@@ -67,13 +67,14 @@ params = dict(
             'pylint',
         ],
         'manage': [
+            'black',
             'bump2version>=0.5.6',
             'tox>=2.4',
             'pip-tools',
         ],
     },
     setup_requires=[
-        'setuptools_scm>=1.15.0',
+        'setuptools_scm>=3.4',
     ],
     classifiers=[
         "Development Status :: 3 - Alpha",
