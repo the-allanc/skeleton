@@ -1,3 +1,4 @@
+dist: bionic
 language: python
 python:
 - 2.7
@@ -7,8 +8,9 @@ python:
 before_install: ['! grep -R SKELETON | grep -v grep']
 install:
 - pip install -r requirements-dev.txt
-- pip install coveralls tox tox-travis
+- pip install -U -upgrade-strategy=eager coveralls tox tox-travis
 script:
+- tox -e black
 - tox
 branches:
   except:
@@ -39,7 +41,7 @@ after_success:
 - coveralls
 cache: pip
 before_script:
-  # Disable IPv6. Ref travis-ci/travis-ci#8361
+  # Enable IPv6. Ref travis-ci/travis-ci#8361
   - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
       sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6';
     fi
