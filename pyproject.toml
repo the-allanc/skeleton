@@ -1,2 +1,6 @@
 [build-system]
 requires = ["setuptools>=42", "wheel", "setuptools_scm>=3.4"] # SKELETON: Remove setuptools_scm requirement if not being used.
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true

@@ -37,7 +37,7 @@
 
 SKELETON: Enter description here. If you want to know how to use the skeleton project itself, read `this document <README-skeleton.rst>`_.
 
-|Docs| |Release Version| |Python Version| |License| |Build Status| |Coverage|
+|Docs| |Release Version| |Python Version| |License| |Build Status| |Coverage| |Black|
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
