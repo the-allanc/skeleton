@@ -8,7 +8,7 @@ python:
 before_install: ['! grep -R SKELETON | grep -v grep']
 install:
 - pip install -r requirements-dev.txt
-- pip install -U -upgrade-strategy=eager coveralls tox tox-travis
+- pip install -U --upgrade-strategy=eager coveralls tox tox-travis
 script:
 - tox -e black
 - tox
