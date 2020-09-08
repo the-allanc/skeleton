@@ -10,17 +10,20 @@ install:
 - pip install -r requirements-dev.txt
 - pip install -U --upgrade-strategy=eager coveralls tox tox-travis
 script:
-- tox -e black
 - tox
 branches:
   except:
   - skeleton
 jobs:
   include:
-  - stage: build-docs
+  - stage: docs-and-lint
     python: *latest_py3
     install: pip install tox
-    script: tox -e docs
+    script:
+      - tox -e black
+      - tox -e docs
+    after_script: tox -e lint
+    after_success: []
   - stage: deploy
     if: tag IS present
     python: *latest_py3
@@ -32,11 +35,6 @@ jobs:
     user: amc6010
     # supply password with `travis encrypt --add deploy.password`
     distributions: dists
-  - stage: lint-check
-    python: *latest_py3
-    install: pip install tox
-    script: skip
-    after_script: tox -e lint
 after_success:
 - coveralls
 cache: pip
