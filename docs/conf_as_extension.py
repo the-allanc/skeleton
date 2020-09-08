@@ -15,10 +15,13 @@ def init(app):
     # I prefer the copyright to include the date.
     if app.config.author == app.config.copyright:
         from datetime import date
+
         copyright = '{} {}'.format(date.today().year, app.config.author)
         app.config.copyright = copyright
     app.config.rst_epilog = prolog.format(app.config)
 
     # Version fixing tip from https://github.com/pypa/setuptools_scm
     from pkg_resources import get_distribution
-    app.config.version = app.config.release = get_distribution(app.config.project).version
+
+    ver = get_distribution(app.config.project).version
+    app.config.release = app.config.version = ver
