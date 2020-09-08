@@ -12,7 +12,6 @@
 .. _coveralls: https://coveralls.io/github/the-allanc/SKELETON
 .. _license: https://github.com/the-allanc/SKELETON/master/LICENSE.txt
 .. _travis: https://travis-ci.org/the-allanc/SKELETON
-.. _codeclimate: https://codeclimate.com/github/the-allanc/SKELETON
 
 .. |Build Status| image:: https://img.shields.io/travis/the-allanc/SKELETON.svg
     :target: travis_
@@ -32,16 +31,13 @@
 .. |License| image:: https://img.shields.io/pypi/l/SKELETON.svg
     :target: license_
     :alt: License
-.. |Code Climate| image:: https://img.shields.io/codeclimate/issues/github/the-allanc/SKELETON.svg
-    :target: codeclimate_
-    :alt: Code Climate
 .. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
     :alt: Code style: Black
 
 SKELETON: Enter description here. If you want to know how to use the skeleton project itself, read `this document <README-skeleton.rst>`_.
 
-|Docs| |Release Version| |Python Version| |License| |Build Status| |Coverage| |Code Climate|
+|Docs| |Release Version| |Python Version| |License| |Build Status| |Coverage|
 
 .. all-content-above-will-be-included-in-sphinx-docs
 
